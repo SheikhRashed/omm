@@ -1,0 +1,96 @@
+#newsfeed{
+    margin: 15px 0px;
+    @media(max-width:767px ){
+        margin: 20px 0px;
+    }
+    @include mobiles_s{
+        margin: 50px 0px;
+    }
+    nav{
+        .nav{
+           
+            .nav-item{
+                background-color: #e9edf6;
+                margin: 0px 4px;
+                color: #000;
+                font-family: font(medium);
+                text-transform: uppercase;
+                border-bottom: 1px solid rgb(192, 184, 184);
+                &.nav-link{
+                    border-top-left-radius: 12px;
+                    border-top-right-radius: 12px;
+                    padding: 2px 12px;
+                    &.active{
+                        // background-color: #c5cad6;
+                        color: color(primary);
+                    }
+                }
+            }
+        }
+    }
+        .tab-content{
+           background-color: #e9edf6;
+           padding: 0px 15px;
+           .tab-pane{
+             .content_inner{
+                .left_txt,.right_txt{
+                    font-family: font(bold);
+                    font-size: 1.2rem;
+                    @include mobiles_s{
+                        font-size: 12px;
+                    }
+                }
+
+                .news_slider{
+                    font-family: font(medium);
+                    font-size: 1rem;
+                    @include mobiles_s{
+                        font-size: 12px;
+                    }
+                  .slide{
+                    justify-content: flex-end;
+
+                    .news_brand{
+                        img{
+                            @include mobiles_s{
+                                width: 70px;
+                            }
+                        }
+                    }
+                  }  
+
+                }
+
+                .right_txt{
+                    display: flex;
+                    justify-content: flex-end;
+                    // padding-right: 15px;
+                    position: relative;
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        width: 2px;
+                        height: 90%;
+                        background-color: #000;
+                        @include mobiles_s{
+                        display: none;
+                        }
+                    }
+                }
+             }
+           }
+       } 
+}
+
+.slick-slide{
+    outline: none;
+}
+// .tab-content{
+//     background-color: #e9edf6;
+//     .tab-pane{
+
+//     }
+// } 

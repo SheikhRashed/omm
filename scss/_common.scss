@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    &:hover{
+        @extend a;
+    }
+    &:focus{
+        @extend a;
+    }
+
+}
+
+button,.btn{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    &:hover{
+        @extend button;
+    }
+}
+
+$colors: (
+    primary: #1779ba,
+    secondary: #3b98de,
+    brand: #fcb815,
+    one: #a2cff0,
+);
+@function color($color_name) {
+    @return
+        map-get($colors,$color_name);  
+}
+
+$fonts:(
+    bold: "H_Bold",
+    medium: "H_Medium",
+    regular: "H_Regular",
+    normal: "H_black",
+);
+@function font($font_name) {
+    @return
+        map-get($fonts,$font_name);  
+}
+
+
+// media query
+$desktop: 1281px;
+$laptop: 1025px;
+$tablet: 768px;
+$mobile: 481px;
+$s_mobile: 320px;
+
+
+@mixin desktops {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+@mixin laptops {
+    @media (min-width: #{$laptop}) and (max-width:1280px){
+        @content;
+    }
+}
+@mixin laptops_landscape {
+    @media (min-width: #{$laptop}) and (max-width:1280px) and (orientation: landscape){
+        @content;
+    }
+}
+
+@mixin tablets_potrait {
+    @media (min-width: #{$tablet}) and (max-width:1024px){
+        @content;
+    }
+}
+
+@mixin tablets_landscape {
+    @media (min-width: #{$tablet}) and (max-width:1024px) and (orientation: landscape){
+        @content;
+    }
+}
+
+@mixin mobiles {
+    @media (min-width: #{$mobile}) and (max-width:767px){
+        @content;
+    }
+}
+@mixin mobiles_landscape {
+    @media (min-width: #{$mobile}) and (max-width:767px) and (orientation: landscape){
+        @content;
+    }
+}
+
+@mixin mobiles_s {
+    @media (min-width: #{$s_mobile}) and (max-width:480px){
+        @content;
+    }
+}
+
+@mixin mobiles_s_landscape {
+    @media (min-width: #{$s_mobile}) and (max-width:480px) and (orientation: landscape){
+        @content;
+    }
+}
+
+
+.container{
+    min-width: 1450px;
+    @media (max-width:1200px) {
+        min-width: 95% !important;
+    }
+}
+
+body{
+    font-family: font(regular);
+}

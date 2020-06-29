@@ -1,0 +1,273 @@
+
+.col-lg-4{
+    &.sidebar_right{
+        padding: 0 !important;
+
+        .sidebar-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            @media(max-width: 991px) {
+                position: relative;
+            }
+            .make-me-sticky {
+            //   position: -webkit-sticky;
+              position: sticky;
+              top: 20px;
+             @media(max-width: 991px) {
+                position: static;
+                top: 0;
+             }
+              .reg_btn{
+                text-align: center;
+                margin-bottom: 10px;
+                // background-color: color(brand);
+                .btn{
+                    background-color: color(brand);
+                    display: inline-block;
+                    width: 235px;
+                    height: 45px;
+                    @include tablets_potrait{
+                        margin: 0;
+                        margin: 10px 0px;
+                    }
+                    @media(max-width:767px) {
+                        margin: 10px 0px;
+                    }
+                    a{
+                        font-size: 1.2rem;
+                        padding: 30px;
+                        color: #fff;
+                    }
+                }
+                }
+
+               .sign{
+                   &.card{
+                       padding: 0px;
+                   }
+                .sign_btn{
+                    a{
+                       
+                        font-size: 1.2rem;
+                        font-family: font(bold);
+                        &.btn{
+                            background-color: color(secondary);
+                            color: #fff;
+                            padding: 15px;
+                        }
+                    }
+                }
+                .sign_content{
+                    padding: 16px 10px;
+                    background-color: #e9edf6;
+
+                    .txt{
+                        font-size: 1.2rem;
+                        font-family: font(bold);
+                        color: color(primary);
+                    }
+                    .sign_btn{
+                        background-color: color(primary);
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        line-height: 30px;
+                        color: #fff;
+                        margin: auto;
+                    }
+                }
+                .sign_content_row{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                    padding: 10px;
+                    .btn{
+                        margin: 0px 4px;
+                        margin-bottom: 5px;
+                        border: 1px solid #ddd;
+                        font-family: font(bold);
+                        color: color(primary);
+                        position: relative;
+                        
+                        .close{
+                            position: absolute;
+                            font-size: 0.8em;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            line-height: 20px;
+                            // padding: 8px;
+                            text-align: center;
+                            background-color: #8faad2;
+                            top: -10px;
+                        }
+                    }
+                }
+
+                .sign_content_bottom{
+                    padding: 15px;
+                    display: flex;
+
+                    span{
+                        font-family: font(bold);
+                        font-size: 1.2rem;
+                    }
+                }
+               }
+               .bank{
+                   &.card{
+                       padding: 0px;
+                   }
+                .bank_btn{
+                    a{
+                       
+                        font-size: 1.2rem;
+                        font-family: font(bold);
+                        &.btn{
+                            background-color: color(secondary);
+                            color: #fff;
+                            padding: 15px;
+                        }
+                    }
+                }
+                .bank_content{
+                    padding: 10px 0px;
+
+                    .bnk_items{
+                      
+                        .bnk_item {
+                            margin: auto;
+                            border: 1px solid #ddd;
+                            padding: 5px 2px;
+                        }
+                    }
+                }
+               }
+               .search{
+                   overflow: hidden;
+                .search_btn{
+                    background-color: color(secondary);
+                    padding: 10px 0px;
+                    a{
+                        color: #fff;
+                        font-size: 1.2rem;
+                        font-family: font(bold);
+                    }
+                }
+                .search_content{
+                    nav{
+                        .nav-tabs{
+                            
+                         .nav-item{
+                             width: 33.33%;
+                             border-left: 1px solid #ddd;
+                             border-right: 1px solid #ddd;
+                             &.active {
+                                 background-color: color(one);
+                             }
+                         }
+                        }
+                    }
+                    .tab-content{
+                        // display: none;
+                        .tap-pane{
+                           
+                        }
+                    }
+                }
+               }
+            }
+          }
+    }
+}
+.search_mark{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    // padding: 10px 6px;
+    .mark{
+        background-color: inherit;
+        .b{
+           color: color(primary);
+           font-size: 1.2rem;
+           font-family: font(bold);
+        }
+        .c{
+            @extend .b;
+            color: color(secondary);
+        }
+
+        .txt{
+            font-size: 1rem;
+            font-family: font(medium);
+        }
+    }
+}
+.search_input{
+    padding: 5px 0px;
+    padding-left: 20px;
+    border: 2px solid #ddd;
+}
+.dep{
+    font-size: 1.2rem;
+    font-family: font(bold);
+}
+.d-cal {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    .icon {
+        position: absolute;
+        z-index: 3;
+        margin-left: 5px;
+        margin-top: 2px;
+        i{
+            font-size: 12px;
+        }
+    }
+    select{
+        // -webkit-appearance: none;
+        // -moz-appearance: none;
+        appearance: none;
+        text-align-last:right;
+        padding: 0px 5px;
+        position: relative;
+        
+        &#month{
+            width: 90px;
+        }
+        &#day{
+            width: 55px;
+        }
+
+        &::before{
+            content: '\f078';
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            font-weight: 900;
+            font-family: "Font Awesome 5 Free";
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+            // appearance: visible;
+        }
+    }
+}
+.tab-pane{
+    padding: 10px 6px;
+
+    .btn{
+        background-color: color(secondary);
+        color: #fff;
+        font-size: 1.2rem;
+        font-family: font(medium);
+        text-transform: uppercase;
+    }
+}
