@@ -1,10 +1,10 @@
 main{
-    .col-lg-8{
+    .col-lg-9{
         .accordion{
 
             .card_box{
                 display: flex;
-                border: 2px solid #ddd;
+                border: 1px solid #e9eef6;
                 padding: 10px 0px;
                 border-radius: 5px;
                 overflow: visible;
@@ -29,7 +29,7 @@ main{
                     &.btn{
                         margin: 0px 4px;
                         margin-bottom: 5px;
-                        border: 1px solid #ddd;
+                        border: 1px solid #e9eef6;
                         font-family: font(bold);
                         color: color(primary);
                         // width: 80px;
@@ -169,7 +169,9 @@ main{
     margin-right: 15px !important;
     // margin-top: 5px;
     margin-bottom: 10px;
-    border: 2px solid #ddd;
+    border: 2px solid #e9eef6;
+    display: flex;
+    justify-content: cene;
     align-items: center;
     // justify-content: space-evenly;
     @media(max-width: 767px) {
@@ -202,9 +204,10 @@ main{
                     &:last-child{
                         position: absolute;
                         right: 5px;
+                        top: 4px;
                         width: 25px;
                         height: 25px;
-                        border: 2px solid color(primary);
+                        // border: 2px solid #e9eef6;
                         text-align: center;
                         border-radius: 50%;
                         padding: 5px;
@@ -218,14 +221,34 @@ main{
                         }
                     }
                 }
+                .sym{
+                    border: 2px solid #2e62ad;
+                    border-radius: 100%;
+                    padding: 0;
+                    margin: 5px 3px 5px 0;
+                    background-color: white;
+                    color: #2e62ad;
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: bold;
+                    &:hover{
+                        background: color(primary);
+                        
+                        i{
+                            color: #fff;
+                        }
+                    }
+                }
             }
         }
     }
     .multi{
-        border: 1px solid #ddd;
+        border-left: 1px solid #e9eef6;
         border-top: 0;
         border-bottom: 0;
         padding: 0px 6px;
+        width: 150%;
+        justify-content: center;
         @media(max-width: 767px) {
             border-left: none;
         }
@@ -240,7 +263,7 @@ main{
             margin: 0px 10px;
             text-align: center;
             .txt{
-                font-size: 12px;
+                font-size: 13px;
                 font-family: font(medium);
                 text-transform: capitalize;
                 @include mobiles_s{
@@ -248,9 +271,15 @@ main{
                 }
             }
         }
+
     }
     .date{
         // border-left: 1px solid #ddd;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-left: 1px solid #e9eef6;
         @include tablets_potrait{
             margin-left: 0px !important;
             margin-right: auto;
@@ -265,7 +294,6 @@ main{
 }
 
 .calculator{
-    &:hover,
     &:focus
    {
         
@@ -285,7 +313,7 @@ main{
         .top{
             display: flex;
             justify-content: space-between;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #e9eef6;
             padding-bottom: 10px;
             height: 20%;
             font-family: font(bold);
@@ -353,7 +381,7 @@ main{
             display: flex;
             align-items: flex-end;
             height: 20%;
-            border-top: 1px solid #ddd;
+            border-top: 1px solid #e9eef6;
             padding-top: 10px;
 
             .btn{

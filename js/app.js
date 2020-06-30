@@ -1,18 +1,6 @@
-// $('.news_slider').jCarousel({
-//   type: 'slidey-up',
-//   circle: {
-//       isshow:false,
-//   },
-//   arrow: {
-//       isshow: false,
-//   }
-// });
 
+$('.collapse').collapse();
 
-// $('.d').jCarousel({
-//     type:'slidey-up',
-//     // carsize: {carwidth:200,carheight:400},
-//  });
 
 $('.news_slider').slick({
     dots:false,

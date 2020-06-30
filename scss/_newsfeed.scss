@@ -15,7 +15,8 @@
                 color: #000;
                 font-family: font(medium);
                 text-transform: uppercase;
-                border-bottom: 1px solid rgb(192, 184, 184);
+                border-bottom: 1px solid #e9eef6;
+                font-size: 14px;
                 &.nav-link{
                     border-top-left-radius: 12px;
                     border-top-right-radius: 12px;
@@ -33,6 +34,7 @@
            padding: 0px 15px;
            .tab-pane{
              .content_inner{
+
                 .left_txt,.right_txt{
                     font-family: font(bold);
                     font-size: 1.2rem;
@@ -44,6 +46,7 @@
                 .news_slider{
                     font-family: font(medium);
                     font-size: 1rem;
+                    overflow: hidden;
                     @include mobiles_s{
                         font-size: 12px;
                     }
@@ -64,15 +67,17 @@
                 .right_txt{
                     display: flex;
                     justify-content: flex-end;
+                    margin-left: auto;
                     // padding-right: 15px;
+                    // max-width: 150px !important;
                     position: relative;
 
                     &::after{
                         content: '';
                         position: absolute;
-                        left: 0px;
+                        right: 90px;
                         top: 0px;
-                        width: 2px;
+                        width: 1px;
                         height: 90%;
                         background-color: #000;
                         @include mobiles_s{
