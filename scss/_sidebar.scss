@@ -23,10 +23,12 @@
               .reg_btn{
                 text-align: center;
                 margin-bottom: 10px;
+                display: flex;
                 .btn{
                     background-color: color(brand);
                     display: inline-block;
-                    width: 178px;
+                    margin: 0px 2px;
+                    width: 140px;
                     height: 45px;
                     border-radius: 5px 0px 0px 5px;
                     &.log{
@@ -139,7 +141,7 @@
                     }
                 }
                 .bank_content{
-                    padding: 10px 0px;
+                    padding: 10px 4px;
 
                     .bnk_items{
                       
@@ -148,6 +150,12 @@
                             border: 1px solid #e9eef6;
                             padding: 5px;
                             border-radius: 5px;
+                            .bnk_link{
+                               
+                                img{
+                                    border-radius: 6px;
+                                }
+                            }
                         }
                     }
                 }
@@ -196,6 +204,9 @@
     // padding: 10px 6px;
     .mark{
         background-color: inherit;
+        &:first-child{
+            margin: auto;
+        }
         // .b{
         //    color: color(primary);
         //    font-size: 1.2rem;
@@ -278,12 +289,13 @@ input{
     }
 }
 .tab-pane{
-    padding: 10px 6px;
+    padding: 10px 15px;
 
     .btn{
         background-color: color(secondary);
         color: #fff;
-        font-size: 1.2rem;
+        font-size: 14px;
+        margin: 15px 0px;
         font-family: font(medium);
         text-transform: uppercase;
     }

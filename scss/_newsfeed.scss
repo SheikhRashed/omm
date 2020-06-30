@@ -37,7 +37,7 @@
 
                 .left_txt,.right_txt{
                     font-family: font(bold);
-                    font-size: 1.2rem;
+                    font-size: 14px;
                     @include mobiles_s{
                         font-size: 12px;
                     }
@@ -90,6 +90,22 @@
        } 
 }
 
+@media(max-width: 1024px) {
+    .lg-s{
+        display: block;
+    }
+    .lg-d {
+        display: none;
+    }
+}
+@media(min-width: 1025px) {
+    .lg-s{
+        display: none;
+    }
+    .lg-d {
+        display: block;
+    }
+}
 .slick-slide{
     outline: none;
 }
