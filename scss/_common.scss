@@ -122,6 +122,58 @@ $s_mobile: 320px;
     border-bottom-right-radius: 10px;
     border: 1px solid grey;
 }
+.card-body{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 0px;
+    &.py{
+        padding: 5px 20px !important;
+    }
+    &.center{
+        justify-content: center;
+        @media(max-width:1200px){
+            flex-flow: wrap;
+            flex-direction: row;
+        }
+        @media(max-width:767px){
+            flex-direction: row;
+        }
+    }
+    @media(max-width:1200px){
+        flex-flow: wrap;
+    }
+    @media(max-width:767px){
+        flex-direction: row;
+    }
+    // @include mobiles_s{
+    //     flex-direction: column;
+    // }
+  a{
+      font-size: 1rem;
+    &.btn{
+        margin: 0px 4px;
+        margin-bottom: 5px;
+        border: 1px solid #e9eef6;
+        font-family: font(bold);
+        color: color(primary);
+        padding: 5px;
+        // width: 80px;
+        @media(max-width: 767px) {
+            font-size: 10px;
+        }
+        img{
+            border-radius: 6px;
+        }
+    }
+  }
+}
+.collapse{
+    .card-body{
+        position: relative;
+        padding: 10px 15px;
+    }
+}
+
 body{
     font-family: font(regular);
     font-size: 14px;

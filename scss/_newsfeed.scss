@@ -1,12 +1,15 @@
 #newsfeed{
     margin: 15px 0px;
     @media(max-width:767px ){
-        margin: 20px 0px;
+        margin: 10px 0px;
     }
     @include mobiles_s{
-        margin: 50px 0px;
+       margin-top: 50px;
     }
     nav{
+        @media(max-width: 767px) {
+            margin: 0px 15px !important;
+        }
         .nav{
            
             .nav-item{
@@ -32,20 +35,29 @@
         .tab-content{
            background-color: #e9edf6;
            padding: 0px 15px;
+           @media(max-width: 767px) {
+            margin: 0px 15px !important;
+        }
            .tab-pane{
              .content_inner{
 
                 .left_txt,.right_txt{
                     font-family: font(bold);
                     font-size: 14px;
-                    @include mobiles_s{
-                        font-size: 12px;
+                    line-height: 14px;
+                    @media(max-width:1200px){
+                        font-size: 10px;
+                        line-height: 10px;
+                     
+                    }
+                    @media(max-width: 767px){
+                        // font-size: 12px;
+                        // line-height: 12px;
                     }
                 }
 
                 .news_slider{
                     font-family: font(medium);
-                    font-size: 1rem;
                     overflow: hidden;
                     @include mobiles_s{
                         font-size: 12px;
@@ -58,6 +70,13 @@
                             @include mobiles_s{
                                 width: 70px;
                             }
+                        }
+                    }
+                    .txt{
+                        font-size: 14px;
+                        text-align: right;
+                        @media(max-width: 767px) {
+                            font-size: 10px;
                         }
                     }
                   }  
@@ -80,6 +99,10 @@
                         width: 1px;
                         height: 90%;
                         background-color: #000;
+                        // @media
+                        @media(max-width: 1200px) {
+                            right: 50px;
+                        }
                         @include mobiles_s{
                         display: none;
                         }
@@ -115,3 +138,13 @@
 
 //     }
 // } 
+
+.content_inner{
+    .col-md-1{
+        display: flex;
+        align-items: center;
+    }
+}
+.p{
+    padding: 0 !important;
+}

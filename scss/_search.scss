@@ -21,6 +21,7 @@
                     // pointer-events: none;
                     @media(max-width: 767px){
                         font-size: 12px;
+                        padding: 11.5px 20px;
                     }
                     @include mobiles_s{
                         position: absolute;
