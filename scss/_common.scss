@@ -6,6 +6,10 @@
 ul,ol,li{
     list-style: none;
 }
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 a{
     text-decoration: none;
     color: #000;
@@ -111,12 +115,12 @@ $s_mobile: 320px;
 }
 
 
-// .container{
-//     min-width: 1450px;
-//     @media (max-width:1200px) {
-//         min-width: 95% !important;
-//     }
-// }
+.container{
+    min-width: 1200px;
+    @media (max-width:1200px) {
+        min-width: 95% !important;
+    }
+}
 .card{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -126,8 +130,9 @@ $s_mobile: 320px;
     display: flex;
     justify-content: flex-end;
     padding-bottom: 0px;
+    padding: 0 !important;
     &.py{
-        padding: 5px 20px !important;
+        padding: 5px 0px !important;
     }
     &.center{
         justify-content: center;
@@ -158,11 +163,11 @@ $s_mobile: 320px;
         color: color(primary);
         padding: 5px;
         // width: 80px;
+        border-radius: 6px;
         @media(max-width: 767px) {
             font-size: 10px;
         }
         img{
-            border-radius: 6px;
         }
     }
   }
@@ -171,6 +176,26 @@ $s_mobile: 320px;
     .card-body{
         position: relative;
         padding: 10px 15px;
+    }
+}
+
+// Modal
+.modal-header{
+    .modal-title{
+        order: 2;
+    }
+    .close{
+        order: 1;
+        margin:0;
+        margin-top: -15px;
+    }
+}
+.modal-footer{
+    justify-content: flex-start;
+    .btn{
+    //    justify-items: flex-start;
+    // margin-left: 0px;
+    // margin;
     }
 }
 

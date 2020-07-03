@@ -119,25 +119,6 @@ main{
     }
     
 }
-// .col-lg-4{
-//     &.sidebar_right{
-//         padding: 0 !important;
-
-//         .sidebar-item {
-//             position: absolute;
-//             top: 0;
-//             left: 0;
-//             width: 100%;
-//             height: 100%;
-        
-//             .make-me-sticky {
-//               position: -webkit-sticky;
-//               position: sticky;
-//               top: 0px;
-//             }
-//           }
-//     }
-// }
 
 .card_pannel{
     margin-left: -15px !important;
@@ -183,11 +164,11 @@ main{
                 background-color: #e9edf6;
                 width: 125px;
                 margin: 5px 0px;
-                // padding: 10px;
-                padding: 8px 5px;
+                padding: 8px 10px;
                 @media(max-width: 576px) {
                     font-size: 10px;
-                    width: 100px;
+                    width: 130px;
+                    padding: 10px;
                 }
                 position: relative;
                 .d-inline{
@@ -320,127 +301,72 @@ main{
 }
 
 .calculator{
-//     &:focus
-//    {
-//         .hide{
-//             opacity: 1;
-//             transform: translateY(0px);
-//             // pointer-events;
-//             pointer-events: all;
-//         }
-//     }
-    .calculator_box{
-        width: 450px;
-        background-color: #fff;
+   
+}
+
+.calculator_box{
+    width: 450px;
+    background-color: #fff;
+    z-index: 999;
+    position: absolute;
+    padding: 15px 12px;
+    transition: all 0.9s linear;
+    top: 0;
+    transform: translateY(0px);
+    display: none;
+    &.open{
+    opacity: 1;
+    display: block;
+    transform: translateY(80px);
+        pointer-events: all;
+    }
+    &.close{
+        
         opacity: 0;
-        z-index: 999;
-        position: absolute;
-        padding: 15px 12px;
-        transition: all 0.9s linear;
-        top: 0;
-        transform: translateY(0px);
-        // display: none;
-        pointer-events: none;
-        &.open{
-            opacity: 1;
-            // transition: all 0.9s ease-out;
-            // transform: translateY(0px);
-        transform: translateY(100px);
+    }
+    @media(max-width: 991px) {
+        top: 155px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+@media(max-width: 767px){
+    top: 150px;
+    left: 50px;
+}
+@include mobiles_s{
+    width: 290px;
+    top: 110px;
+    left: 80px;
+}
+    .top{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #e9eef6;
+        padding-bottom: 10px;
+        height: 20%;
+        font-family: font(bold);
+        .txt{
+            font-size: 1rem;
+        }
+    }
+    .center {
+        display: flex;
+        align-items: center;
+        height: 60%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .bottom{
+        display: flex;
+        align-items: flex-end;
+        height: 20%;
+        border-top: 1px solid #e9eef6;
+        padding-top: 10px;
 
-            pointer-events: all;
-        }
-        &.close{
-            // display:;
-            opacity: 0;
-        }
-    @media(max-width: 767px){
-        top: 150px;
-        left: 50px;
-    }
-    @include mobiles_s{
-        left: 15px;
-        width: 290px;
-        top: 45px;
-    }
-        .top{
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid #e9eef6;
-            padding-bottom: 10px;
-            height: 20%;
+        .btn{
+            background: #6c757d;
+            color: #fff;
             font-family: font(bold);
-            .txt{
-                font-size: 1rem;
-            }
-        }
-        .center {
-            display: flex;
-            align-items: center;
-            height: 60%;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            // position: relative;
-            .calculator_layout{
-                width: 290px;
-                height: 350px;
-                // display: flex;
-                // flex-direction: column;
-                align-items: center;
-                // position: absolute;
-                margin: auto;
-                background-color: #e9edee;
-                padding: 12px 8px;
-                .cal_output{
-                    width: 100%;
-                    margin: auto;
-                    margin-top: 30px;
-                    input{
-                        width: 95%;
-                    }
-                }
-                .key_box{
-                    margin-top: 15px;
-
-                    .row{
-
-                        span{
-                            width: 40px;
-                            height: 40px;
-                            border-radius: 50%;
-                            background-color: #d5d3d8;
-                            text-align: center;
-                            line-height: 40px;
-                            margin: 5px 15px;
-                            font-family: font(bold);
-                            font-size: 1rem;
-                            &.grey{
-                                background-color: #efefef;
-                            }
-                            &.brown{
-                                background-color: #fcb816;
-                                color: #fff;
-                            }
-                            &.opacity{
-                                pointer-events: none;
-                                opacity: 0;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .bottom{
-            display: flex;
-            align-items: flex-end;
-            height: 20%;
-            border-top: 1px solid #e9eef6;
-            padding-top: 10px;
-
-            .btn{
-                background: #6c757d;
-                color: #fff;
-                font-family: font(bold);
-            }
         }
     }
 }
