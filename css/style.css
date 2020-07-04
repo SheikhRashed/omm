@@ -582,6 +582,7 @@ main .col-lg-9 .accordion .card_box .card-header {
 @media (max-width: 767px) {
   main .col-lg-9 .accordion .card_box .card-header {
     padding: 0px 5px;
+    margin: 0px -5px;
   }
 }
 
@@ -599,6 +600,12 @@ main .col-lg-9 .accordion .card_box .card-header .align {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+
+@media (max-width: 576px) {
+  main .col-lg-9 .accordion .card_box .card-header .align {
+    right: 2px !important;
+  }
 }
 
 main .col-lg-9 .accordion .card_box .card-header .align.three {
@@ -661,8 +668,15 @@ main .col-lg-9 .accordion .card_box .card-header .align .category_name a:hover {
 
 @media (max-width: 767px) {
   main .col-lg-9 .accordion .card_box .card-header .align .category_name a {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  main .col-lg-9 .accordion .card_box .card-header .align .category_name a {
+    font-size: 8px;
+    line-height: 8px;
   }
 }
 
