@@ -1,7 +1,6 @@
 footer{
     background-color: color(primary);
-    font-family: font(bold);
-    min-height: 90px;
+    min-height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +42,12 @@ footer{
             }
             a{
                 color: #fff;
-                font-size: 1rem;
+                font-size: 14px;
+                line-height: 18px;
+                font-family: font(medium);
+                &:hover{
+                    text-decoration: underline;
+                }
                 @media(max-width: 767px) {
                     font-size: 16px;
                 }

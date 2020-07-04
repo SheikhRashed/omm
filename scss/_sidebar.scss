@@ -30,13 +30,13 @@
                 .btn{
                     background-color: color(brand);
                     display: inline-block;
-                    margin: 0px 2px;
-                    width: 140px;
+                    margin: 0px 1px;
+                    width: 100%;
                     height: 45px;
                     border-radius: 5px 0px 0px 5px;
 
                     @media(max-width: 1200px) {
-                        width: 115px;
+
                     }
                     &.log{
                         border-radius: 0px 5px 5px 0px;
@@ -50,7 +50,8 @@
                         margin: 10px 2px;
                     }
                     a{
-                        font-size: 1.2rem;
+                        font-size: 18px;
+                        line-height: 27px;
                         padding: 30px;
                         color: #fff;
                     }
@@ -71,6 +72,7 @@
                             background-color: color(secondary);
                             color: #fff;
                             padding: 15px;
+                            border-radius: 0px;
                         }
                     }
                 }
@@ -79,8 +81,9 @@
                     background-color: #e9edf6;
 
                     .txt{
-                        font-size: 1.2rem;
-                        font-family: font(bold);
+                        font-size: 16px;
+                        line-height: 26px;
+                        font-family: font(medium);
                         color: color(primary);
                     }
                     .sign_btn{
@@ -105,7 +108,7 @@
                         font-family: font(bold);
                         color: color(primary);
                         position: relative;
-                        
+                        padding: 5px;
                         .close{
                             position: absolute;
                             font-size: 0.8em;
@@ -132,18 +135,21 @@
                 }
                }
                .bank{
+                   border-radius: 0px;
                    &.card{
                        padding: 0px;
                    }
                 .bank_btn{
                     a{
-                       
-                        font-size: 1.2rem;
+                        font-size: 18px;
+                        line-height: 27px;
                         font-family: font(bold);
+                        border-radius: 0px;
                         &.btn{
                             background-color: color(secondary);
                             color: #fff;
                             padding: 15px;
+                            // border-radius: 0px;
                         }
                     }
                 }
@@ -212,7 +218,7 @@
     .mark{
         background-color: inherit;
         &:first-child{
-            margin: auto;
+            // margin: auto;
         }
         // .b{
         //    color: color(primary);
@@ -250,13 +256,14 @@ input{
     }
 }
 .dep{
-    font-size: 1.2rem;
-    font-family: font(bold);
+    font-size: 14px;
+    font-family: font(medium);
 }
 .d-cal {
     display: flex;
     justify-content: flex-end;
     position: relative;
+    margin-bottom: 5px;
     .icon {
         position: absolute;
         z-index: 3;

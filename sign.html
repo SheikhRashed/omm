@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>OMM</title>
+  <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="css/all.min.css">
@@ -292,16 +293,16 @@
     <div class="container">
       <div class="row">
 
-
         <div class="col-lg-9 ">
           <div class="card_pannel">
             
-            <div class="c d-flex">
+            <div class="c d-flex ord">
 
               <ul class="items">
                 <li class="item">
                   <div class="d-inline"><img src="./img/equal.png" alt="image_blank"  class="img-fluid ml mr-4"></div>
-                    35 ת"א </li>
+                    35 ת"א 
+                  </li>
                 <li class="item">
                   <div class="d-inline"><img src="./img/equal.png" alt="image_blank"  class="img-fluid ml mr-4"></div>
                   125 ת"א  
@@ -353,12 +354,12 @@
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <h5 class="modal-title" id="exampleModalLabel">Calculator</h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
-                        <div class="modal-body py-3">
+                        <div class="modal-body">
                            <div id="cal"></div> 
                         </div>
                         <div class="modal-footer">
@@ -368,34 +369,9 @@
                       </div>
                     </div>
                   </div>
-
-
-
-                  <!-- <div class="calculator_box row">
-                    <div class="container">
-                      <div class="col-12">
-                        <div id="micalc"></div>
-                      </div>
-                    </div>
-                  </div> -->
-                   <!-- <div class="calculator_box shadow-lg">
-                    <div class="row">
-                      <div class="top col-12">
-                        <div class="close"><img src="./img/bar_close.png" alt="image_blank" ></div>
-                        <div class="txt">calculator</div>
-                      </div>
-   
-                      <div class="center col-12">
-                        <div id="micalc"></div>
-                      </div>
-                      <div class="bottom col-12">
-                        <span class="btn">Total</span>
-                      </div>
-                    </div>
-                   </div> -->
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#" class="cloud">
                     <img src="./img/toolbar/weather-widget-image.png" alt="image_blank" >
                   <span class="txt d-block">25<sup>0</sup></span>
                   </a>
@@ -450,8 +426,14 @@
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">פנאי</span>
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></button>
+                <div class="d-flex align">
+                  <div class="category_name">
+                    <a href="#">
+                    פנאי
+                    </a>
+                  </div>
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></button>
+                </div>
             </div>
             </div>
 
@@ -479,8 +461,14 @@
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">נשים</span>
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#two" aria-expanded="true" aria-controls="two"></button>
+                <div class="d-flex align">
+                  <div class="category_name">
+                    <a href="#">
+                    נשים
+                    </a>
+                  </div>
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#two" aria-expanded="true" aria-controls="two"></button>
+                </div>
             </div>
             </div>
 
@@ -495,8 +483,14 @@
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">גברים</span>
+              <div class="d-flex align three">
+                <div class="category_name">
+                  <a href="#">
+                  גברים
+                  </a>
+                </div>
                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#three" aria-expanded="false" aria-controls="three"></button>
+              </div>
             </div>
             </div>
 
@@ -523,8 +517,14 @@
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">חוק וממשל</span>
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#four" aria-expanded="false" aria-controls="four"></button>
+                <div class="d-flex align four">
+                  <div class="category_name">
+                    <a href="#">
+                      חוק   <br> וממשל
+                    </a>
+                  </div>
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#four" aria-expanded="false" aria-controls="four"></button>
+                </div>
             </div>
             </div>
 
@@ -532,14 +532,20 @@
               <div class="card_body col-10">
                 <div class="card-body">
               </div>
-                <div id="fifth" class="collapse show"  data-parent="#accordion">
+                <div id="five" class="collapse show"  data-parent="#accordion">
                   <div class="card-body mr-auto">
                   </div>
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">קריירה</span>
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#fifth" aria-expanded="false" aria-controls="fifth"></button>
+                <div class="d-flex align five">
+                  <div class="category_name">
+                    <a href="#">
+                    קריירה
+                    </a>
+                  </div>
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#five" aria-expanded="false" aria-controls="five"></button>
+                </div>
             </div>
             </div>
 
@@ -553,8 +559,14 @@
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">תקשורת</span>
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#six" aria-expanded="false" aria-controls="six"></button>
+                <div class="d-flex align six">
+                  <div class="category_name">
+                    <a href="#">
+                    תקשורת
+                    </a>
+                  </div>
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#six" aria-expanded="false" aria-controls="six"></button>
+                </div>
             </div>
             </div>
 
@@ -570,8 +582,14 @@
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">תחבורה</span>
+               <div class="d-flex align seven">
+                <div class="category_name">
+                  <a href="#">
+                  תחבורה
+                  </a>
+                </div>
                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#seven" aria-expanded="false" aria-controls="seven"></button>
+               </div>
             </div>
             </div>
             <div class="card_box mb-2 row">
@@ -584,8 +602,14 @@
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">משפחה</span>
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#eight" aria-expanded="false" aria-controls="eight"></button>
+                <div class="d-flex align eight">
+                  <div class="category_name">
+                    <a href="#">
+                    משפחה
+                    </a>
+                  </div>
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#eight" aria-expanded="false" aria-controls="eight"></button>
+                </div>
             </div>
             </div>
             <div class="card_box mb-2 row">
@@ -599,8 +623,14 @@
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">אינטרנט</span>
+               <div class="d-flex align nine">
+                <div class="category_name">
+                  <a href="#">
+                  אינטרנט
+                  </a>
+                </div>
                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#nine" aria-expanded="false" aria-controls="nine"></button>
+               </div>
             </div>
             </div>
             <div class="card_box mb-2 row">
@@ -616,23 +646,35 @@
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">נופש</span>
+               <div class="d-flex align ten">
+                <div class="category_name">
+                  <a href="#">
+                  נופש
+                  </a>
+                </div>
                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#ten" aria-expanded="false" aria-controls="ten"></button>
+               </div>
             </div>
             </div>
             <div class="card_box mb-2 row">
               <div class="card_body col-10">
                 <ul class="card-body">
               
-              </ul>
+                </ul>
                 <div id="eleven" class="collapse show"  data-parent="#accordion">
                   <ul class="card-body mr-auto py">
                   </ul>
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">בריאות</span>
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#eleven" aria-expanded="false" aria-controls="eleven"></button>
+                <div class="d-flex align eleven">
+                  <div class="category_name">
+                    <a href="#">
+                    בריאות
+                    </a>
+                  </div>
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#eleven" aria-expanded="false" aria-controls="eleven"></button>
+                </div>
             </div>
             </div>
             <div class="card_box mb-2 row">
@@ -645,8 +687,14 @@
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">נדלן</span>
+               <div class="d-flex align twelve">
+                <div class="category_name">
+                  <a href="#">
+                  נדלן
+                  </a>
+                </div>
                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#twelve" aria-expanded="false" aria-controls="twelve"></button>
+               </div>
             </div>
             </div>
             <div class="card_box mb-2 row">
@@ -660,8 +708,14 @@
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">קריפטו</span>
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#thirty" aria-expanded="false" aria-controls="thirty"></button>
+                <div class="d-flex align thirty">
+                  <div class="category_name">
+                    <a href="#">
+                    קריפטו
+                    </a>
+                  </div>
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#thirty" aria-expanded="false" aria-controls="thirty"></button>
+                </div>
             </div>
             </div>
             <div class="card_box mb-2 row">
@@ -674,8 +728,14 @@
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">חברתי</span>
+              <div class="d-flex align fourty">
+                <div class="category_name">
+                  <a href="#">
+                  חברתי
+                  </a>
+                </div>
                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#fourty" aria-expanded="false" aria-controls="fourty"></button>
+              </div>
             </div>
             </div>
             <div class="card_box mb-2 row">
@@ -689,14 +749,19 @@
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">חיפוש</span>
+               <div class="d-flex align fifty">
+                <div class="category_name">
+                  <a href="#">
+                  חיפוש
+                  </a>
+                </div>
                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#fifty" aria-expanded="false" aria-controls="fifty"></button>
+               </div>
             </div>
             </div>
             <div class="card_box mb-2 row">
               <div class="card_body col-10">
                 <ul class="card-body">
-              
                 </ul>
                 <div id="sixty" class="collapse show"  data-parent="#accordion">
                   <ul class="card-body mr-auto">
@@ -704,23 +769,34 @@
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">חדשות</span>
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#sixty" aria-expanded="false" aria-controls="sixty"></button>
+                <div class="d-flex align sixty">
+                  <div class="category_name">
+                    <a href="#">
+                    חדשות
+                    </a>
+                  </div>
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#sixty" aria-expanded="false" aria-controls="sixty"></button>
+                </div>
             </div>
             </div>
             <div class="card_box mb-2 row">
               <div class="card_body col-10">
                 <ul class="card-body">
-              
-              </ul>
+                </ul>
                 <div id="seventy" class="collapse show"  data-parent="#accordion">
                   <ul class="card-body mr-auto py">
                   </ul>
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">כלכלה</span>
+               <div class="d-flex align seventy">
+                <div class="category_name">
+                  <a href="#">
+                  כלכלה
+                  </a>
+                </div>
                 <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#seventy" aria-expanded="false" aria-controls="seventy"></button>
+               </div>
             </div>
             </div>
 
@@ -736,13 +812,20 @@
                 </div>
               </div>
               <div class="card-header col-2">
-                <span class="">שופינג</span>
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#eighty" aria-expanded="false" aria-controls="eighty"></button>
+                <div class="d-flex align eighty">
+                  <div class="category_name">
+                    <a href="#">
+                    שופינג
+                    </a>
+                  </div>
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#eighty" aria-expanded="false" aria-controls="eighty"></button>
+                </div>
             </div>
             </div>
           </div>
           <!-- / / Left Site Accordion -->
         </div>
+
 
         <div class="col-lg-3 sidebar_right">
           
@@ -754,14 +837,15 @@
                 <a href="#" class="btn text-right w-100">בנקים</a>
               </div>
                <div class="sign_content text-center">
-                    <span class="txt">Lorem ipsum dolor sit amet consectetur.</span>
+                    <span class="txt">Lorem ipsum dolor.</span>
                     <div class="sign_btn btn d-block">
                         <i class="fas fa-plus"></i>
                     </div>
                </div>
 
                <div class="sign_content_row border-top">
-                <a href="#" class="btn">Booking
+                <a href="#" class="btn">
+                  <img src="https://via.placeholder.com/75x30" alt="">
                     <span class="close">X</span>
                 </a>
                </div>
@@ -1062,7 +1146,7 @@
                        </span>
                        <span class="ml-1"><i class="far fa-calendar-alt"></i></span>
                        </div>
-                      <div class="btn">submit</div>
+                      <div class="btn">search</div>
                     </div>
 
                   </div>
@@ -1299,7 +1383,7 @@
                        </span>
                        <span class="ml-1"><i class="far fa-calendar-alt"></i></span>
                        </div>
-                      <div class="btn">submit</div>
+                      <div class="btn">search</div>
                     </div>
 
                   </div>
@@ -1537,7 +1621,7 @@
                        </span>
                        <span class="ml-1"><i class="far fa-calendar-alt"></i></span>
                        </div>
-                      <div class="btn">submit</div>
+                      <div class="btn">search</div>
                     </div>
                   </div>
 

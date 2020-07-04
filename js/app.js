@@ -1,4 +1,5 @@
-"use strict"
+"use strict";
+
 // Calculator
 $("#cal").Calculadora(
     {
@@ -14,9 +15,8 @@ $("#cal").Calculadora(
     }
   );
 
-
+// modal collapse
 $('.collapse').collapse();
-
 
 $('.news_slider').slick({
     dots:false,
@@ -36,6 +36,7 @@ btn.addEventListener('click',(e)=>{
     
     calculator.classList.add('open');
 });
+
 clsBtn.addEventListener('click',(e)=>{
 
    calculator.remove();
