@@ -26,8 +26,11 @@ main{
                     padding: 0px 15px;
                     position: relative;
                     @media(max-width: 767px){
-                        padding: 0px 5px;
-                        margin: 0px -5px;
+                        padding: 5px 0px;
+                        // margin: 0px -5px;
+                        justify-content: flex-end;
+                        padding-right: 15px;
+                        // border: 1px solid;
                     }
                     &::after{
                         content: '';
@@ -36,6 +39,9 @@ main{
                         width: 2px;
                         height: 80%;
                         background-color: #ddd;
+                        @media(max-width: 767px) {
+                            display: none;
+                        }
                     }
                     .align{
                         align-items: center;
@@ -51,9 +57,15 @@ main{
                         &.eight,
                         &.nine{
                             right: 5px;
+                            @media(max-width: 767px) {
+                                right: 0px;
+                            }
                         }
                         &.six{
                             right: 8px;
+                            @media(max-width: 767px) {
+                                right: 0px;
+                            }
                         }
                         &.seven{
                             right: 6px;
@@ -79,6 +91,28 @@ main{
                         &.eighty{
                             right: -12px;
                         }
+                        // for medium device
+                        &.one,
+                        &.two,
+                        &.three,
+                        &.four,
+                        &.six,
+                        &.seven,
+                        &.eight,
+                        &.nine,
+                        &.ten,
+                        &.eleven,
+                        &.twelve,
+                        &.thirty,
+                        &.fourty,
+                        &.fifty,
+                        &.sixty,
+                        &.seventy,
+                        &.eighty{
+                            @media(max-width: 767px) {
+                                right: 0px;
+                            }
+                        }
                         .category_name{
                             text-align: right;
                          a{
@@ -93,11 +127,11 @@ main{
                                  text-decoration: underline;
                              }
                              @media(max-width:767px) {
-                                 font-size: 12px;
+                                 font-size: 14px;
                                  line-height: 16px;
                              }
                              @media(max-width:576px) {
-                                 font-size: 8px;
+                                 font-size: 12px;
                                  line-height: 8px;
                              }
                          }
@@ -223,16 +257,24 @@ main{
                 width: 125px;
                 margin: 2px -1px;
                 padding: 8px 10px;
+                position: relative;
                 @media(max-width: 576px) {
                     font-size: 10px;
                     width: 130px;
                     padding: 10px;
                 }
-                position: relative;
+               
+                & > div{
+                    text-align: center;
+                    margin-left: -20px;
+                }
                 .d-inline{
                     .ml{
                         margin-left: 8px;
                     }
+                }
+                .txt{
+                    display: inline-block;
                 }
                 span{
                     img{

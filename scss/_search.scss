@@ -24,14 +24,15 @@
                         padding: 11.5px 20px;
                     }
                     @include mobiles_s{
-                        position: absolute;
-                        z-index: 1;
-                        top: 55px;
-                        left: 50%;
-                        transform: translate(-50%,-50%);
-                        width: 50%;
-                        text-align: center;
-                        padding: 5px;
+                        padding: 6.5px 15px;
+                        // position: absolute;
+                        // z-index: 1;
+                        // top: 55px;
+                        // left: 50%;
+                        // transform: translate(-50%,-50%);
+                        // width: 50%;
+                        // text-align: center;
+                        // padding: 5px;
                     }
                 }
                 .group{
