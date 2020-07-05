@@ -953,12 +953,6 @@ main .col-lg-9 .accordion .card_box .card-header .align .btn-link.collapsed::aft
   }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  .card_pannel .multi {
-    border: none;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 1024px) {
   .card_pannel .multi {
     margin: auto;

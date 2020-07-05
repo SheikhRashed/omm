@@ -344,7 +344,7 @@ main{
         }
        
         @include mobiles_s {
-            border: none;
+            // border: none;
         }
         @include tablets_potrait{
             margin: auto;
