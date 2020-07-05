@@ -741,7 +741,7 @@ main .col-lg-9 .accordion .card_box .card-header .align .btn-link::after {
   top: 50%;
   -webkit-transform: translate(15%, -50%);
           transform: translate(15%, -50%);
-  font-family: 'Font Awesome\ 5 Free';
+  font-family: 'Font Awesome 5 Free';
   background-color: #1779ba;
   width: 18px;
   height: 18px;
